@@ -4,6 +4,8 @@ import os
 from io import BytesIO
 import requests
 import json
+username = ""
+password = ""
 def OCR(dir):
 	url = "https://api.ocr.space/parse/image"
 	payload={'apikey': 'd7908af91d88957',
@@ -26,8 +28,8 @@ elementPassword = driver.find_element_by_id("Password")
 elementCaptcha = driver.find_element_by_id("Captcha")
 elementIMGCaptcha = driver.find_element_by_id("newcaptcha")
 
-elementUsername.send_keys("2000006273")
-elementPassword.send_keys("pd1n1g!!!")
+elementUsername.send_keys(username)
+elementPassword.send_keys(password)
 
 location = elementIMGCaptcha.location
 size = elementIMGCaptcha.size
