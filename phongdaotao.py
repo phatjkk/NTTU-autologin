@@ -8,8 +8,8 @@ import requests
 import json
 import time
 
-username = "2000006273"
-password = "pd1n1g!!!"
+username = ""
+password = ""
 def OCR(dir):
 	url = "https://api.ocr.space/parse/image"
 	payload={'apikey': 'd7908af91d88957',
